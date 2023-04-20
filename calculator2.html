@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator2.css">
+    <script src="calculator2.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Line Dance Difficulty Calculator</h1>
+    Dances are scored based on the following categories. You MUST fill out each field for the calculator to provide an accurate result.
+    <form>
+        Walls:<input required id="walls" type="number" name="walls" min="1" max="4"/><br/>
+        Counts:<input id="counts" type="number" min="1"/><br/>
+        Steps:<input id="steps" type="number" min="1" /><br/>
+        BPM:<input id="bpm" type="number" min="1"/><br/>
+        Number of Turns:<input id="turns" type="number" min="0"/><br/>
+        Sum Of Turns:<input id="turnSum" type="number" min="0" step="0.25"/><br/>
+        Greatest Turn:<input id="turnSize" type="number" min="0" step="0.25"/><br/>
+        Tags:<input id="tags" type="number" min="0"/><br/>
+        Restarts:<input id="restarts" type="number" min="0"/><br/>
+        Phrased:<input id="phrased" type="checkbox" value="true"/><br/>
+        Sum of Step Difficulty:<input id="stepDifficulty" type="number" min="1"/><br/>
+        <button id="submit" type="button" onclick="calculateResult()">Submit</button>
+    </form>
+    <div>Your Result is: <div id="result"></div></div>
+    <div>Your Dance Level is: <div id="resultLevel"></div></div>
+</body>
+</html>
