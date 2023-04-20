@@ -21,7 +21,6 @@ if (counts <= 32) {
 } else {
     total = +total + 10;
 }
-console.log(total)
 
 if (steps/counts <= 1) {
     total = +total + 1
@@ -32,7 +31,6 @@ if (steps/counts <= 1) {
 } else {
     total = +total + 10
 }
-console.log(total)
 
 if (bpm <= 55) {
     total = +total + 4
@@ -45,7 +43,6 @@ if (bpm <= 55) {
 } else {
     total = +total + 10
 }
-console.log(total)
 
 if (turns <= 1) {
     total = +total + 1
@@ -56,7 +53,6 @@ if (turns <= 1) {
 } else {
     total = +total + 10
 }
-console.log(total)
 
 if (turnSum <= .25) {
     total = +total + 1
@@ -67,7 +63,6 @@ if (turnSum <= .25) {
 } else {
     total = +total + 10
 }
-console.log(total)
 
 if (turnSize <= .5) {
     total = +total + 1
@@ -78,7 +73,6 @@ if (turnSize <= .5) {
 } else {
     total = +total + 10
 }
-console.log(total)
 
 if (tags < 1) {
     total = +total + 1
@@ -89,7 +83,6 @@ if (tags < 1) {
 } else {
     total = +total + 10
 }
-console.log(total)
 
 if (restarts < 1) {
     total = +total + 1
@@ -100,12 +93,10 @@ if (restarts < 1) {
 } else {
     total = +total + 10
 }
-console.log(total)
 
 if (phrased) {
     total = +total + 10
 } 
-console.log(total)
 
 if (stepDifficulty/steps < 1) {
     total = +total + 1
@@ -116,7 +107,6 @@ if (stepDifficulty/steps < 1) {
 } else {
     total = +total + 10
 }
-console.log(total)
 
 document.getElementById('result').innerHTML = total
 if (total < 18) {
